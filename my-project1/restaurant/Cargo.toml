@@ -1,0 +1,13 @@
+[package]
+name = "restaurant"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# 生产环境中, 程序运行的profile
+[profile.release]
+# 遇到panic, 立即中止程序, 内存由os回收
+panic = "abort"

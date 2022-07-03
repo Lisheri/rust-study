@@ -7,6 +7,7 @@
     + 模块（Modules）和 use： 允许你控制作用域和路径的私有性。
     + 路径（path）：一个命名例如结构体、函数或模块等项的方式
 */
+use restaurant::eat_at_restaurant;
 fn main() {
   /* 
     ! 1. create
