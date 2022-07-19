@@ -5,7 +5,6 @@ edition = "2021"
 authors = ["Lisher"]
 description = "这个是一个测试用的crate, 不需要任何的标识, 仅仅是在学习时提交到crates"
 license="MIT"
-email = "496585582@qq.com"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
