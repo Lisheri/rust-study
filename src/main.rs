@@ -91,6 +91,5 @@ fn main() {
 
     将 hosting 暴露出来, 即可在外部被调用: pub mod hosting {...}
   */
-  
   println!("Hello, world!");
 }

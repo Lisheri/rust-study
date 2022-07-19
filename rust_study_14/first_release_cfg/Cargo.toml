@@ -1,0 +1,21 @@
+[package]
+name = "first_release_cfg"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# 没有profile.xxxx的区域, 表示采用的都是默认的配置
+
+# 针对dev修改默认配置
+# 这样使用 dev这个配置时, opt-level的值就变成0了
+# 这个参数决定rust编译时, 对代码进行哪种程度的优化, 范围是 0 - 3, 优化程度越高, 就需要越多的编译时间
+# 开发阶段通常为了缩短开发时间而舍弃运行时性能, 所以一般 dev下的 opt-level就是0
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3
