@@ -60,6 +60,21 @@
         ? 多个许可可以使用 OR 连接
         ? version: 版本
         ? author: 作者
+    - crate 一旦发布, 就是永久性的: 该版本无法覆盖, 代码无法删除
+      * 目的: 依赖于该版本的项目可继续正常工作
+    - 发布已存在 crate 的新版本
+      * 修改后, 跟换 version 重新发布即可
+    - 使用 cargo yank 从 crates.io 撤回版本
+      * 不能删除
+      * 但可以防止其他项目把他作为新的依赖: yank(撤回) 一个 crate版本
+      * 可以防止新项目依赖于该版本
+      * 已经存在项目可继续将其作为依赖
+    - yank意味着
+      * 已生成了lock文件可以继续用
+      * 没有生成当前版本的lock文件, 将无法使用
+    - 使用
+      * cargo yank --vers x.x.x
+      * 取消 cargo yank --vers x.x.x --undo
 */  
 
 // * 导入 pub use 重新导出的模块
