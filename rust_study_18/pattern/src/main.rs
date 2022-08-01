@@ -16,14 +16,24 @@
 
 use pattern::modules::refutability_18_2::tst_refutability;
 use pattern::modules::pattern_language::*;
+use pattern::higher_features::unsafe_rust_19::*;
+use pattern::higher_features::search_matrix::*;
 fn main() {
     tst_refutability();
+    // unsafe_rust_origin_pointer();
+    // unsafe_rust_use_unsafe_fn();
+    // unsafe_rust_safe_abstract();
+    // use_extern();
+    use_static_fn();
+    // let result = search_matrix(vec![vec![1,4,7,11,15], vec![2,5,8,12,19], vec![3,6,9,16,22], vec![10,13,14,17,24], vec![18,21,23,26,30]], 20);
+    // let result = search_matrix(vec![vec![-5]], -10);
+    // println!("{}", result);
     // match_literal_value();
     // match_name_variable();
     // multiple_mode();
     // ignore_value();
     // match_guard();
-    bind();
+    // bind();
     // * 所有可能会用到模式的位置
     // ? match 分支
     /* 
